@@ -1,0 +1,805 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Chivo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --azul: #03346E;
+    --verde: #6FD72B;
+    --font-chivo-mono: "Chivo Mono", monospace;
+    --font-chivo: "Chivo", sans-serif;
+    --font-albert: "Albert Sans", sans-serif;
+    --font-lilita: "Lilita One", sans-serif;
+    --font-urbanist: "Urbanist", sans-serif;
+    --font-inter: "Inter", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--azul);
+    color: white;
+}
+
+body > a{
+    display: none;
+}
+
+#home, #study, #contact {
+    height: 100vh;
+}
+
+#skill, #study,
+#project, #contact {
+    padding: 0 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#skill h2, #study h2,
+#project h2, #contact h2 {
+    font-family: var(--font-chivo-mono);
+    font-weight: bold;
+    font-style: italic;
+    color: var(--verde);
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 5.5rem;
+}
+
+
+/* sección home */
+
+#home {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: center;
+    padding: 0 .5rem;
+    align-items: center;
+}
+
+header {
+    padding: 1.5rem 100vw;
+    min-width: 22rem;
+    width: 26rem;
+    position: fixed;
+    background-color: var(--azul);
+    padding-top: 1rem;
+    bottom: 0;
+    border-top: 2px solid var(--verde);
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    font-family: var(--font-chivo);
+    font-size: 1.2rem;
+    color: var(--azul);
+    font-weight: bold;
+}
+
+header ul li {
+    background-color: var(--verde);
+    padding: .7rem;
+    border-radius: 50%;
+}
+
+header ul a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header ul a span {
+    display: none;
+}
+
+.home__presentation-short {
+    margin-top: -3rem;
+}
+
+.photo {
+    width: 12rem;
+    border-radius: 50%;
+    margin: .8rem;
+}
+
+.home__presentation-short p {
+    font-family: var(--font-chivo-mono);
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: -.7rem;
+}
+
+h1 {
+    font-family: var(--font-lilita);
+    font-size: 8rem;
+    color: var(--verde);
+    letter-spacing: -.3rem;
+}
+
+.home__presentation-short h2 {
+    font-family: var(--font-chivo);
+    font-weight: 400;
+    font-size: 1.4rem;
+    padding: 0 1rem;
+    line-height: 1.7rem;
+}
+
+.home__presentation-short h2 span {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1.7rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid white;
+    width: 0;
+    animation: typing 8s steps(40, end) forwards, blink 10s step-end infinite alternate;
+    animation-iteration-count: infinite;
+}
+
+/* Animación de escritura */
+@keyframes typing {
+    30% { width: 0; }
+    50% { width: 54%; }
+    75% { width: 54%; }
+    95% { width: 0; } 
+}
+
+/* Animación del cursor */
+@keyframes blink {
+    0%, 5%, 10%, 15%, 20%,
+    25%, 30%, 35%, 40%, 45%,
+    50%, 55%, 60%, 65%, 70%,
+    75%, 80%, 85%, 90%, 95%, 100% { border-color: white; }
+
+    4%, 9%, 14%, 19%, 24%,
+    29%, 34%, 39%, 44%, 49%,
+    54%, 59%, 64%, 69%, 74%,
+    79%, 84%, 89%, 94%, 99% { border-color: transparent; }
+}
+
+.home__presentation-short h2 span:hover {
+    color: var(--verde);
+}
+
+.home__social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1.5rem 0 1rem 0;
+    background-color: var(--azul);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.home__social-media a {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+    text-decoration: none;
+    font-size: .85rem;
+    font-family: var(--font-albert);
+}
+
+.home__social-media img {
+    height: 1.8rem;
+}
+
+
+/* seccion sobre mi */
+
+#about {
+    padding: 0 2.5rem;
+    margin-bottom: 2rem;
+    background-color: #002550;
+}
+
+#about h2 {
+    font-family: var(--font-chivo-mono);
+    font-weight: bold;
+    font-style: italic;
+    color: var(--verde);
+    font-size: 2rem;
+    margin-bottom: .4rem;
+    padding-top: 5.5rem;
+}
+
+#about h4 {
+    font-family: var(--font-chivo-mono);
+    font-size: 1.5rem;
+    color: var(--verde);
+    margin-bottom: 1.2rem;
+    line-height: 1.7rem;
+    padding-right: 3rem;
+}
+
+#about h4 span {
+    font-weight: 700;
+}
+
+#about p {
+    font-family: var(--font-albert);
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.7rem;
+}
+
+#about p:last-of-type{
+    padding-bottom: 3.5rem;
+}
+
+
+/* seccion habilidades */
+
+.section__skill-progress,
+.section__skill-noProgress {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section__skill-noProgress {
+    margin-bottom: 8rem;
+}
+
+.skill__box {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+}
+
+.skill__box img,
+.skill__box-noProgress img{
+    height: 3.8rem;
+}
+
+.skill__box-info {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill__box-info > p,
+.skill__box-noProgress div{
+    font-family: var(--font-chivo);
+    text-align: center;
+    line-height: 1.2rem;
+}
+
+.skill__box-info div{
+    font-family: var(--font-chivo-mono);
+    font-weight: 300;
+    background-color: white;
+    color: var(--azul);
+    padding: .1rem;
+    border-radius: 20px;
+    width: 150px;
+    display: flex;
+    gap: 1rem;
+}
+
+.skill__box-progress {
+    width: 75px;
+    border-radius: 20px;
+    background-color: #6FD72B;
+}
+
+.skill__box p:last-child {
+    font-size: .8rem;
+}
+
+.skill__box-progress-react {
+    width: 22.5px;
+    border-radius: 20px;
+    background-color: #6FD72B;
+}
+
+.skill__box-progress-vite {
+    width: 15px;
+    border-radius: 20px;
+    background-color: #6FD72B;
+}
+
+.skill__box-noProgress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+
+
+/* seccion formación */
+
+#study{
+    background-color: #002550;
+}
+
+.section__study {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.study__box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    max-width: 20rem;
+}
+
+.study__box img[src="./assets/img/aluraoracle.png"] {
+    width: 5rem;
+}
+
+.study__box img[src="./assets/img/academlo.png"]{
+    width: 5rem;
+    border-radius: 50%;
+}
+
+.study__box h3 {
+    font-family: var(--font-chivo);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
+    border-bottom: 1px solid var(--verde);
+    padding-bottom: .3rem;
+    max-width: 10rem;
+    color: var(--verde);
+}
+
+.study__box p {
+    font-family: var(--font-albert);
+    margin-bottom: .5rem;
+    line-height: 1.2rem;
+}
+
+.study__box p:last-child {
+    font-family: var(--font-chivo-mono);
+    background-color: var(--verde);
+    max-width: 10rem;
+    text-align: center;
+    padding: .2rem 0 .2rem 0;
+    color: var(--azul)
+    
+}
+
+
+/* seccion proyectos */
+
+
+.projects__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    flex-grow: inherit;
+    justify-content: center;
+    margin-bottom: 3.5rem;
+}
+
+.project__box {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    max-width: 350px;
+}
+
+.project__box h3 {
+    font-family: var(--font-chivo);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
+    border-bottom: 1px solid var(--verde);
+    padding-bottom: .3rem;
+    color: var(--verde);
+}
+
+.project__box img {
+    text-align: center;
+    max-width: 350px
+}
+
+.project__box-info {
+    display: flex;
+    justify-content: space-between;
+    margin: .3rem;
+}
+
+.project__box-info div:first-child i{
+    margin-right: .3rem;
+}
+
+.project__box-info div:last-child i{
+    color: var(--verde);
+}
+
+
+/* seccion contacto */
+
+#contact {
+    align-items: center;
+    background-color: #002550;
+}
+
+#contact > p {
+    font-family: var(--font-albert);
+    line-height: 1.3rem;
+    text-align: center;
+    margin-top: -1rem;
+}
+
+#contact p a {
+    color: var(--verde);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 90%;
+    font-family: var(--font-chivo);
+}
+
+form div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+form input {
+    border: none;
+    height: 2rem;
+    border-radius: 5px;
+    padding-left: .4rem;
+    padding-right: .4rem;
+    outline: none;
+    background-color:#00142b;
+    font-family: var(--font-chivo);
+    color: white;
+    width: 13rem;
+}
+
+form textarea {
+    resize: none;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color:#00142b;
+    font-family: var(--font-chivo);
+    color: white;
+    height: 5rem;
+    padding: .4rem;
+    font-size: .9rem;
+    width: 13rem;
+}
+
+form button {
+    width: 5rem;
+    height: 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    font-family: var(--font-chivo);
+    font-weight: 500;
+}
+
+form input:hover {
+    background-color:#011c3b;
+}
+
+form input:focus {
+    border: 1px solid var(--verde);
+}
+
+form textarea:hover {
+    background-color:#011c3b;
+}
+
+form textarea:focus {
+    border: 1px solid var(--verde);
+}
+
+form button:hover {
+    border: 2px solid var(--verde);
+}
+
+form button:focus {
+    background-color: rgb(179, 195, 218);
+}
+
+.publicity {
+    display: flex;
+    font-size: 1.4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_image {
+    width: 2.2rem;
+    margin: 0 .3rem 0 0
+}
+
+.jons {
+    font-family: var(--font-urbanist);
+    font-weight: 900;
+    color: #6FD72B;
+}
+
+.dev {
+    font-family: var(--font-urbanist);
+    font-weight: 600;
+    color: #00B3FF;
+}
+
+.signed {
+    font-family: var(--font-urbanist);
+    color: #00B3FF;   
+}
+
+.developer {
+    font-family: var(--font-inter);
+    font-size: .85rem;
+    text-align: center;
+}
+
+
+/* Estilos tablets */
+@media (min-width: 768px) {
+
+    body > a {
+        display: initial;
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        background-color: var(--verde);
+        border-radius: 50%;
+        padding: .7rem;
+        opacity: 30%;
+        text-decoration: none;
+        color: var(--azul);
+    }
+
+    body > a:hover {
+        scale: 1.2;
+    }
+
+    #skill h2, #study h2, #contact h2 {
+        padding-top: 0;
+    }
+
+    /* sección home */
+
+    #home {
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+        padding: 0;
+        align-items: center;
+    }
+    
+    header {
+        padding: 0 0;
+        min-width: 0;
+        width: 90vw;
+        position: initial;
+        background-color: transparent;
+        margin-top: 2rem;
+        border-top: transparent;
+    }
+    
+    header ul {
+        font-size: 1rem;
+        font-weight: initial;
+    }
+    
+    header ul li {
+        background-color: transparent;
+        padding: 0;
+        border-radius: 0;
+        font-weight: bolder;
+    }
+    
+    header ul a {
+        color: var(--verde)
+    }
+    
+    header ul a span {
+        display: inline-block;
+        font-weight: initial;
+        color: white;
+        padding-bottom: .2rem;
+    }
+
+    header ul a span:hover {
+        border-bottom: 2px solid var(--verde);
+    }
+
+    header ul i {
+        margin-right: .35rem;
+    }
+    
+    .home__presentation-short {
+        margin-top: 0;
+    }
+    
+    .photo {
+        width: 13rem;
+    }
+    
+    .home__presentation-short h2 span:hover {
+        color: var(--verde);
+    }
+    
+    .home__social-media {
+        padding: 0;
+        background-color: transparent;
+        position: initial;
+        margin-bottom: 2.5rem;
+    }
+
+
+    /* seccion sobre mi */
+
+    #about {
+        padding: 0 8rem;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    #about h2 {
+        padding-top: 0;
+    }
+
+    #about p:last-of-type{
+        padding-bottom: 0;
+    }
+
+
+    /* seccion habilidades */
+
+    #skill {
+        padding: 4rem 0;
+        justify-content: center;
+    }
+
+    .section__skill-progress,
+    .section__skill-noProgress {
+        padding: 0 3.5rem;
+    }
+
+    .section__skill-noProgress {
+        margin-bottom: 0;
+    }
+
+
+    /* seccion formación */
+
+    #study {
+        justify-content: center;
+    }
+
+
+    /* seccion proyectos */
+
+    #project {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #project h2 {
+        padding-top: 3.5rem;
+    }
+
+    #project > div{
+        display: flex;
+        flex-flow: row, wrap;
+        gap: 2rem;
+    }
+
+    .project__box img {
+        width: 100%;
+    }
+
+    .project__box-info div:first-child i{
+        margin-right: .3rem;
+    }
+
+
+    /* seccion contacto */
+    
+    #contact {
+        justify-content: center;
+        padding: 0 8rem;
+    }
+}
+
+/* Estilos para pc */
+@media (min-width: 1024px) {
+
+    /* sección home */
+
+    header {
+        margin-top: 1.3rem;
+    }
+
+    header ul {
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .home__social-media {
+        padding: 0;
+        background-color: transparent;
+        position: initial;
+        margin-bottom: 1.3rem;
+    }
+
+    /* seccion sobre mi */
+
+    #about {
+        padding: 0 15rem;
+    }
+
+
+     /* seccion habilidades */
+
+     #skill {
+        height: 100vh;
+        padding: 0 14rem;
+    }
+
+    .section__skill-progress,
+    .section__skill-noProgress {
+        padding: 0 3.5rem;
+    }
+
+    .section__skill-noProgress {
+        margin-bottom: 0;
+    }
+
+
+    /* seccion proyectos */
+
+    #project {
+        height: 100vh;
+    }
+
+    #project h2 {
+        padding-top: 0rem;
+    }
+
+    #project > div{
+        gap: 5rem;
+    }
+
+
+     /* seccion contacto */
+    
+     #contact {
+        padding: 0 20rem;
+    }
+
+}
