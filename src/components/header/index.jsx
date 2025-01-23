@@ -1,4 +1,7 @@
+import { RiArchive2Fill, RiGraduationCapFill, RiHomeFill, RiMessage2Fill, RiUserFill } from "react-icons/ri";
+import { FaTools } from "react-icons/fa";
 import styles from './header.module.css'
+
 
 function Header() {
 
@@ -8,16 +11,16 @@ function Header() {
                 <header>
                     <nav>
                         <ul>
-                            <li><a href="#home"><i className="fa-solid fa-house"></i><span>home</span></a></li>
-                            <li><a href="#about"><i className="fa-solid fa-user"></i><span>sobre mí</span></a></li>
-                            <li><a href="#skill"><i className="fa-solid fa-microchip"></i><span>habilidades</span></a></li>
-                            <li><a href="#study"><i className="fa-solid fa-book"></i><span>formación</span></a></li>
-                            <li><a href="#project"><i className="fa-solid fa-br /iefcase"></i><span>proyectos</span></a></li>
-                            <li><a href="#contact"><i className="fa-solid fa-address-card"></i><span>contacto</span></a></li>
+                            <li><a href="#home"><RiHomeFill /><span>home</span></a></li>
+                            <li><a href="#about"><RiUserFill /><span>sobre mí</span></a></li>
+                            <li><a href="#skill"><FaTools /><span>habilidades</span></a></li>
+                            <li><a href="#study"><RiGraduationCapFill /><span>formación</span></a></li>
+                            <li><a href="#project"><RiArchive2Fill /><span>proyectos</span></a></li>
+                            <li><a href="#contact"><RiMessage2Fill /><span>contacto</span></a></li>
                         </ul>
                     </nav>
                 </header>
-            </section>
+            </section >
         </>
     )
 

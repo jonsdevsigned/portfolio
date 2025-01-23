@@ -18,21 +18,21 @@ function Contact() {
                 </a>
                 Si deseas contactarme, no dudes en escribir. ¡Siempre abierto a nuevas oportunidades!
             </p>
-            <form id="contact__form" action="https://formspree.io/f/xrbgpwro" method="post">
+            <form id={atyles.contact__form} action="https://formspree.io/f/xrbgpwro" method="post">
                 <div>
-                    <label for="name">Nombre *</label>
+                    <label htmlFor="name">Nombre *</label>
                     <input type="text" id="name" name="name" required />
                 </div>
                 <div>
-                    <label for="email">Correo *</label>
+                    <label htmlFor="email">Correo *</label>
                     <input type="email" id="email" name="email" required />
                 </div>
                 <div>
-                    <label for="subject">Asunto</label>
+                    <label htmlFor="subject">Asunto</label>
                     <input type="text" id="subject" name="subject" />
                 </div>
                 <div>
-                    <label for="message">Mensaje *</label>
+                    <label htmlFor="message">Mensaje *</label>
                     <textarea id="message" name="message" wrap="hard" placeholder="Escribe tu mensaje aquí..." required></textarea>
                 </div>
                 <div>
