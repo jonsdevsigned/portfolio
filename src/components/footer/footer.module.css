@@ -1,0 +1,34 @@
+.publicity {
+    display: flex;
+    font-size: 1.4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_image {
+    width: 2.2rem;
+    margin: 0 .3rem 0 0
+}
+
+.jons {
+    font-family: var(--font-urbanist);
+    font-weight: 900;
+    color: #6FD72B;
+}
+
+.dev {
+    font-family: var(--font-urbanist);
+    font-weight: 600;
+    color: #00B3FF;
+}
+
+.signed {
+    font-family: var(--font-urbanist);
+    color: #00B3FF;   
+}
+
+.developer {
+    font-family: var(--font-inter);
+    font-size: .85rem;
+    text-align: center;
+}

@@ -1,0 +1,62 @@
+#study{
+    background-color: #002550;
+}
+
+.section__study {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.study__box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    max-width: 20rem;
+}
+
+.study__box img[src="./assets/img/aluraoracle.png"] {
+    width: 5rem;
+}
+
+.study__box img[src="./assets/img/academlo.png"]{
+    width: 5rem;
+    border-radius: 50%;
+}
+
+.study__box h3 {
+    font-family: var(--font-chivo);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
+    border-bottom: 1px solid var(--verde);
+    padding-bottom: .3rem;
+    max-width: 10rem;
+    color: var(--verde);
+}
+
+.study__box p {
+    font-family: var(--font-albert);
+    margin-bottom: .5rem;
+    line-height: 1.2rem;
+}
+
+.study__box p:last-child {
+    font-family: var(--font-chivo-mono);
+    background-color: var(--verde);
+    max-width: 10rem;
+    text-align: center;
+    padding: .2rem 0 .2rem 0;
+    color: var(--azul)
+    
+}
+
+/* Estilos tablets */
+@media (min-width: 768px) {
+
+    #study {
+        justify-content: center;
+    }
+}
+

@@ -1,0 +1,110 @@
+#contact {
+    align-items: center;
+    background-color: #002550;
+}
+
+#contact > p {
+    font-family: var(--font-albert);
+    line-height: 1.3rem;
+    text-align: center;
+    margin-top: -1rem;
+}
+
+#contact p a {
+    color: var(--verde);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 90%;
+    font-family: var(--font-chivo);
+}
+
+form div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+form input {
+    border: none;
+    height: 2rem;
+    border-radius: 5px;
+    padding-left: .4rem;
+    padding-right: .4rem;
+    outline: none;
+    background-color:#00142b;
+    font-family: var(--font-chivo);
+    color: white;
+    width: 13rem;
+}
+
+form textarea {
+    resize: none;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color:#00142b;
+    font-family: var(--font-chivo);
+    color: white;
+    height: 5rem;
+    padding: .4rem;
+    font-size: .9rem;
+    width: 13rem;
+}
+
+form button {
+    width: 5rem;
+    height: 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    font-family: var(--font-chivo);
+    font-weight: 500;
+}
+
+form input:hover {
+    background-color:#011c3b;
+}
+
+form input:focus {
+    border: 1px solid var(--verde);
+}
+
+form textarea:hover {
+    background-color:#011c3b;
+}
+
+form textarea:focus {
+    border: 1px solid var(--verde);
+}
+
+form button:hover {
+    border: 2px solid var(--verde);
+}
+
+form button:focus {
+    background-color: rgb(179, 195, 218);
+}
+
+@media (min-width: 768px) {
+    
+    #contact {
+        justify-content: center;
+        padding: 0 8rem;
+    }
+}
+
+
+@media (min-width: 1024px) {
+   
+    #contact {
+       padding: 0 20rem;
+   }
+
+}

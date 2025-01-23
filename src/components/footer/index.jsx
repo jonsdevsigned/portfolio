@@ -1,12 +1,14 @@
+import styles from './footer.module.css'
+
 function Footer() {
 
     return (
         <footer>
-            <div class="publicity">
-                <img src="./assets/img/jonsdesigned-web.png" alt="Logo de jonsdevsigned" class="logo_image" />
-                <span class="jons">Jons</span><span class="dev">dev</span><span class="signed">signed</span>
+            <div className={styles.publicity}>
+                <img src="./assets/img/jonsdesigned-web.png" alt="Logo de jonsdevsigned" className="logo_image" />
+                <span className={styles.jons}>Jons</span><span className="dev">dev</span><span className="signed">signed</span>
             </div>
-            <p class="developer">John Forero - 2024</p>
+            <p className={styles.developer}>John Forero - 2024</p>
         </footer>
     )
 }

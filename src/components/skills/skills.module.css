@@ -1,0 +1,112 @@
+.section__skill-progress,
+.section__skill-noProgress {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section__skill-noProgress {
+    margin-bottom: 8rem;
+}
+
+.skill__box {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+}
+
+.skill__box img,
+.skill__box-noProgress img{
+    height: 3.8rem;
+}
+
+.skill__box-info {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill__box-info > p,
+.skill__box-noProgress div{
+    font-family: var(--font-chivo);
+    text-align: center;
+    line-height: 1.2rem;
+}
+
+.skill__box-info div{
+    font-family: var(--font-chivo-mono);
+    font-weight: 300;
+    background-color: white;
+    color: var(--azul);
+    padding: .1rem;
+    border-radius: 20px;
+    width: 150px;
+    display: flex;
+    gap: 1rem;
+}
+
+.skill__box-progress {
+    width: 75px;
+    border-radius: 20px;
+    background-color: #6FD72B;
+}
+
+.skill__box p:last-child {
+    font-size: .8rem;
+}
+
+.skill__box-progress-react {
+    width: 22.5px;
+    border-radius: 20px;
+    background-color: #6FD72B;
+}
+
+.skill__box-progress-vite {
+    width: 15px;
+    border-radius: 20px;
+    background-color: #6FD72B;
+}
+
+.skill__box-noProgress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+
+@media (min-width: 768px) {
+
+    #skill {
+        padding: 4rem 0;
+        justify-content: center;
+    }
+
+    .section__skill-progress,
+    .section__skill-noProgress {
+        padding: 0 3.5rem;
+    }
+
+    .section__skill-noProgress {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    #skill {
+       height: 100vh;
+       padding: 0 14rem;
+   }
+
+   .section__skill-progress,
+   .section__skill-noProgress {
+       padding: 0 3.5rem;
+   }
+
+   .section__skill-noProgress {
+       margin-bottom: 0;
+   }
+}

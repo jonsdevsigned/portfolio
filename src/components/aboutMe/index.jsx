@@ -1,7 +1,9 @@
+import styles from './aboutMe.module.css'
+
 function AboutMe() {
 
     return (
-        <section id="about">
+        <section id={styles.about}>
             <h2>Me Presento</h2>
 
             <h4>Soy <span>John Forero</span>, diseñador gráfico y en el futuro programador frontend.</h4>

@@ -1,7 +1,9 @@
+import styles from './contact.module.css'
+
 function Contact() {
 
     return (
-        <section id="contact">
+        <section id={styles.contact}>
             <h2>contacto</h2>
             <p>
                 Cuando no estoy aprendiendo programación web, disfruto de ver

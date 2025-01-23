@@ -1,0 +1,136 @@
+.home__presentation-short {
+    margin-top: -3rem;
+}
+
+.photo {
+    width: 12rem;
+    border-radius: 50%;
+    margin: .8rem;
+}
+
+.home__presentation-short p {
+    font-family: var(--font-chivo-mono);
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: -.7rem;
+}
+
+h1 {
+    font-family: var(--font-lilita);
+    font-size: 8rem;
+    color: var(--verde);
+    letter-spacing: -.3rem;
+}
+
+.home__presentation-short h2 {
+    font-family: var(--font-chivo);
+    font-weight: 400;
+    font-size: 1.4rem;
+    padding: 0 1rem;
+    line-height: 1.7rem;
+}
+
+.home__presentation-short h2 span {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1.7rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid white;
+    width: 0;
+    animation: typing 8s steps(40, end) forwards, blink 10s step-end infinite alternate;
+    animation-iteration-count: infinite;
+}
+
+/* Animación de escritura */
+@keyframes typing {
+    30% { width: 0; }
+    50% { width: 54%; }
+    75% { width: 54%; }
+    95% { width: 0; } 
+}
+
+/* Animación del cursor */
+@keyframes blink {
+    0%, 5%, 10%, 15%, 20%,
+    25%, 30%, 35%, 40%, 45%,
+    50%, 55%, 60%, 65%, 70%,
+    75%, 80%, 85%, 90%, 95%, 100% { border-color: white; }
+
+    4%, 9%, 14%, 19%, 24%,
+    29%, 34%, 39%, 44%, 49%,
+    54%, 59%, 64%, 69%, 74%,
+    79%, 84%, 89%, 94%, 99% { border-color: transparent; }
+}
+
+.home__presentation-short h2 span:hover {
+    color: var(--verde);
+}
+
+.home__social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1.5rem 0 1rem 0;
+    background-color: var(--azul);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.home__social-media a {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+    text-decoration: none;
+    font-size: .85rem;
+    font-family: var(--font-albert);
+}
+
+.home__social-media img {
+    height: 1.8rem;
+}
+
+
+/*styles for tablet*/
+
+@media (min-width: 768px) {
+    
+    .home__presentation-short {
+        margin-top: 0;
+    }
+    
+    .photo {
+        width: 13rem;
+    }
+    
+    .home__presentation-short h2 span:hover {
+        color: var(--verde);
+    }
+    
+    .home__social-media {
+        padding: 0;
+        background-color: transparent;
+        position: initial;
+        margin-bottom: 2.5rem;
+    }
+}
+
+
+/* styles for pc */
+
+@media (min-width: 1024px) {
+
+    .home__social-media {
+        padding: 0;
+        background-color: transparent;
+        position: initial;
+        margin-bottom: 1.3rem;
+    }
+}

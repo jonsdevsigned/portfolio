@@ -1,0 +1,66 @@
+#about {
+    padding: 0 2.5rem;
+    margin-bottom: 2rem;
+    background-color: #002550;
+}
+
+#about h2 {
+    font-family: var(--font-chivo-mono);
+    font-weight: bold;
+    font-style: italic;
+    color: var(--verde);
+    font-size: 2rem;
+    margin-bottom: .4rem;
+    padding-top: 5.5rem;
+}
+
+#about h4 {
+    font-family: var(--font-chivo-mono);
+    font-size: 1.5rem;
+    color: var(--verde);
+    margin-bottom: 1.2rem;
+    line-height: 1.7rem;
+    padding-right: 3rem;
+}
+
+#about h4 span {
+    font-weight: 700;
+}
+
+#about p {
+    font-family: var(--font-albert);
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.7rem;
+}
+
+#about p:last-of-type{
+    padding-bottom: 3.5rem;
+}
+
+@media (min-width: 768px) {
+
+    #about {
+        padding: 0 8rem;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    #about h2 {
+        padding-top: 0;
+    }
+
+    #about p:last-of-type{
+        padding-bottom: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    #about {
+        padding: 0 15rem;
+    }
+}

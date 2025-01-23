@@ -1,10 +1,12 @@
+import styles from './studies.module.css'
+
 function Studies() {
 
     return (
-        <section id="study">
+        <section id={styles.study}>
             <h2>formación</h2>
-            <div class="section__study">
-                <div class="study__box">
+            <div className={styles.section__study}>
+                <div className={styles.study__box}>
                     <img src="./assets/img/aluraoracle.png" alt="logo alura" />
                     <div>
                         <h3>Oracle Next Education</h3>
@@ -13,7 +15,7 @@ function Studies() {
                     </div>
                 </div>
 
-                <div class="study__box">
+                <div className={styles.study__box}>
                     <img src="./assets/img/academlo.png" alt="logo academlo" />
                     <div>
                         <h3>Academlo</h3>
